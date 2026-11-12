@@ -1,0 +1,32 @@
+{
+ "tag": "det_p10_ut_barlow200",
+ "ratio": "p10",
+ "init": "/home/minsoogo/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth",
+ "epochs": 30,
+ "updates": 15390,
+ "burnin_updates": 4617,
+ "tau": 0.5,
+ "lam": 1.0,
+ "ema": 0.9996,
+ "teacher_map50": 0.58863114712061,
+ "student_map50": 0.6082528550636538,
+ "curve": [
+  {
+   "epoch": 10,
+   "teacher_map50": 0.09598321919757358
+  },
+  {
+   "epoch": 15,
+   "teacher_map50": 0.16528344320546418
+  },
+  {
+   "epoch": 20,
+   "teacher_map50": 0.32567372090062185
+  },
+  {
+   "epoch": 25,
+   "teacher_map50": 0.5039136001931588
+  }
+ ],
+ "minutes": 96.0
+}

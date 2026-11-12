@@ -1,0 +1,13 @@
+2026-11-10 13:47:57  start cls_p100_supervised_scratch: method supervised, ratio p100 (4096 labeled images, 26716 labeled crops, 26716 unlabeled crops), init scratch, steps 10000, batch 64 + 0 unlabeled, device cuda
+2026-11-10 13:48:20  step 1000/10000 loss 0.3244  lr 0.0297 EMA test top1 0.0267 macro F1 0.0014 (0.4 min)
+2026-11-10 13:48:41  step 2000/10000 loss 0.3818  lr 0.0289 EMA test top1 0.8580 macro F1 0.8595 (0.7 min)
+2026-11-10 13:49:02  step 3000/10000 loss 0.1248  lr 0.0275 EMA test top1 0.8986 macro F1 0.8949 (1.1 min)
+2026-11-10 13:49:23  step 4000/10000 loss 0.1630  lr 0.0256 EMA test top1 0.8777 macro F1 0.8732 (1.4 min)
+2026-11-10 13:49:44  step 5000/10000 loss 0.1779  lr 0.0232 EMA test top1 0.8895 macro F1 0.8855 (1.8 min)
+2026-11-10 13:50:05  step 6000/10000 loss 0.2621  lr 0.0204 EMA test top1 0.9133 macro F1 0.9119 (2.1 min)
+2026-11-10 13:50:26  step 7000/10000 loss 0.0556  lr 0.0172 EMA test top1 0.9173 macro F1 0.9151 (2.5 min)
+2026-11-10 13:50:47  step 8000/10000 loss 0.1511  lr 0.0136 EMA test top1 0.9192 macro F1 0.9173 (2.8 min)
+2026-11-10 13:51:08  step 9000/10000 loss 0.1981  lr 0.0098 EMA test top1 0.9243 macro F1 0.9219 (3.2 min)
+2026-11-10 13:51:29  step 10000/10000 loss 0.0671  lr 0.0059 EMA test top1 0.9255 macro F1 0.9239 (3.5 min)
+2026-11-10 13:51:30  final EMA test top1 0.9255 macro F1 0.9239
+2026-11-10 13:51:30  DONE cls_p100_supervised_scratch

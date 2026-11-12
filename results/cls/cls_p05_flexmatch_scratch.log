@@ -1,0 +1,13 @@
+2026-11-10 11:32:34  start cls_p05_flexmatch_scratch: method flexmatch, ratio p05 (205 labeled images, 1340 labeled crops, 26716 unlabeled crops), init scratch, steps 10000, batch 64 + 448 unlabeled, device cuda
+2026-11-10 11:36:28  step 1000/10000 loss 0.3563 mask 0.971 lr 0.0297 EMA test top1 0.4495 macro F1 0.4186 (3.9 min)
+2026-11-10 11:40:20  step 2000/10000 loss 0.1693 mask 0.929 lr 0.0289 EMA test top1 0.7664 macro F1 0.7582 (7.8 min)
+2026-11-10 11:44:13  step 3000/10000 loss 0.1477 mask 0.897 lr 0.0275 EMA test top1 0.8503 macro F1 0.8465 (11.6 min)
+2026-11-10 11:48:05  step 4000/10000 loss 0.1315 mask 0.924 lr 0.0256 EMA test top1 0.8922 macro F1 0.8910 (15.5 min)
+2026-11-10 11:51:58  step 5000/10000 loss 0.0801 mask 0.931 lr 0.0232 EMA test top1 0.8954 macro F1 0.8930 (19.4 min)
+2026-11-10 11:55:50  step 6000/10000 loss 0.0754 mask 0.940 lr 0.0204 EMA test top1 0.9094 macro F1 0.9076 (23.3 min)
+2026-11-10 11:59:43  step 7000/10000 loss 0.0993 mask 0.946 lr 0.0172 EMA test top1 0.9072 macro F1 0.9056 (27.1 min)
+2026-11-10 12:03:36  step 8000/10000 loss 0.0619 mask 0.962 lr 0.0136 EMA test top1 0.9100 macro F1 0.9079 (31.0 min)
+2026-11-10 12:07:28  step 9000/10000 loss 0.1135 mask 0.964 lr 0.0098 EMA test top1 0.9125 macro F1 0.9103 (34.9 min)
+2026-11-10 12:11:21  step 10000/10000 loss 0.0895 mask 0.962 lr 0.0059 EMA test top1 0.9124 macro F1 0.9103 (38.8 min)
+2026-11-10 12:11:22  final EMA test top1 0.9124 macro F1 0.9103
+2026-11-10 12:11:22  DONE cls_p05_flexmatch_scratch

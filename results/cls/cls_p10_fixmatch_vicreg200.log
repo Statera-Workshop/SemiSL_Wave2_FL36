@@ -1,0 +1,13 @@
+2026-11-10 06:05:20  start cls_p10_fixmatch_vicreg200: method fixmatch, ratio p10 (410 labeled images, 2653 labeled crops, 26716 unlabeled crops), init /home/minsoogo/SSL_Wave1b/runs/ssl_vicreg/backbone_e200.pth, steps 10000, batch 64 + 448 unlabeled, device cuda
+2026-11-10 06:09:12  step 1000/10000 loss 0.1070 mask 0.850 lr 0.0297 EMA test top1 0.8840 macro F1 0.8828 (3.9 min)
+2026-11-10 06:13:01  step 2000/10000 loss 0.0862 mask 0.900 lr 0.0289 EMA test top1 0.9018 macro F1 0.8995 (7.7 min)
+2026-11-10 06:16:50  step 3000/10000 loss 0.0723 mask 0.906 lr 0.0275 EMA test top1 0.9067 macro F1 0.9046 (11.5 min)
+2026-11-10 06:20:38  step 4000/10000 loss 0.0553 mask 0.920 lr 0.0256 EMA test top1 0.9092 macro F1 0.9071 (15.3 min)
+2026-11-10 06:24:27  step 5000/10000 loss 0.0409 mask 0.949 lr 0.0232 EMA test top1 0.9085 macro F1 0.9053 (19.1 min)
+2026-11-10 06:28:16  step 6000/10000 loss 0.0712 mask 0.922 lr 0.0204 EMA test top1 0.9116 macro F1 0.9082 (22.9 min)
+2026-11-10 06:32:05  step 7000/10000 loss 0.0527 mask 0.933 lr 0.0172 EMA test top1 0.9146 macro F1 0.9117 (26.7 min)
+2026-11-10 06:35:53  step 8000/10000 loss 0.0533 mask 0.940 lr 0.0136 EMA test top1 0.9164 macro F1 0.9131 (30.6 min)
+2026-11-10 06:39:42  step 9000/10000 loss 0.0832 mask 0.951 lr 0.0098 EMA test top1 0.9183 macro F1 0.9151 (34.4 min)
+2026-11-10 06:43:31  step 10000/10000 loss 0.0604 mask 0.964 lr 0.0059 EMA test top1 0.9161 macro F1 0.9125 (38.2 min)
+2026-11-10 06:43:32  final EMA test top1 0.9161 macro F1 0.9125
+2026-11-10 06:43:32  DONE cls_p10_fixmatch_vicreg200

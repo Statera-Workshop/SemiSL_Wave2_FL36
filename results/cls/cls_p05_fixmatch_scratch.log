@@ -1,0 +1,13 @@
+2026-11-10 10:53:31  start cls_p05_fixmatch_scratch: method fixmatch, ratio p05 (205 labeled images, 1340 labeled crops, 26716 unlabeled crops), init scratch, steps 10000, batch 64 + 448 unlabeled, device cuda
+2026-11-10 10:57:25  step 1000/10000 loss 0.1590 mask 0.788 lr 0.0297 EMA test top1 0.4428 macro F1 0.4381 (3.9 min)
+2026-11-10 11:01:16  step 2000/10000 loss 0.1357 mask 0.879 lr 0.0289 EMA test top1 0.8664 macro F1 0.8585 (7.8 min)
+2026-11-10 11:05:08  step 3000/10000 loss 0.0826 mask 0.855 lr 0.0275 EMA test top1 0.8442 macro F1 0.8331 (11.6 min)
+2026-11-10 11:09:00  step 4000/10000 loss 0.1586 mask 0.902 lr 0.0256 EMA test top1 0.8774 macro F1 0.8740 (15.5 min)
+2026-11-10 11:12:53  step 5000/10000 loss 0.0869 mask 0.897 lr 0.0232 EMA test top1 0.8973 macro F1 0.8950 (19.4 min)
+2026-11-10 11:16:45  step 6000/10000 loss 0.0757 mask 0.891 lr 0.0204 EMA test top1 0.8997 macro F1 0.8974 (23.2 min)
+2026-11-10 11:20:37  step 7000/10000 loss 0.1044 mask 0.917 lr 0.0172 EMA test top1 0.9119 macro F1 0.9094 (27.1 min)
+2026-11-10 11:24:30  step 8000/10000 loss 0.0448 mask 0.917 lr 0.0136 EMA test top1 0.9089 macro F1 0.9064 (31.0 min)
+2026-11-10 11:28:22  step 9000/10000 loss 0.0765 mask 0.940 lr 0.0098 EMA test top1 0.9067 macro F1 0.9039 (34.9 min)
+2026-11-10 11:32:14  step 10000/10000 loss 0.1001 mask 0.953 lr 0.0059 EMA test top1 0.9109 macro F1 0.9078 (38.7 min)
+2026-11-10 11:32:15  final EMA test top1 0.9109 macro F1 0.9078
+2026-11-10 11:32:15  DONE cls_p05_fixmatch_scratch

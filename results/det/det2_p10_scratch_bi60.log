@@ -1,0 +1,36 @@
+2026-11-12 13:47:38  start det2_p10_scratch_bi60: ratio p10 (root /home/minsoogo/SSL_Wave2/roots/p10/datasets/FashionLetters36), labeled samples 4100 (410 images), unlabeled images 3686, test 1024, init scratch, epochs 30, updates 15390 (burn-in 9234), tau 0.3, tau_lo 0.1, lam 1.0, ema 0.999, device cuda
+2026-11-12 13:49:25  epoch 1/30 update 513/15390 sup 17.9008 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (1.8 min)
+2026-11-12 13:51:12  epoch 2/30 update 1026/15390 sup 2.8429 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (3.6 min)
+2026-11-12 13:53:00  epoch 3/30 update 1539/15390 sup 2.4664 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (5.4 min)
+2026-11-12 13:54:48  epoch 4/30 update 2052/15390 sup 2.3098 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (7.2 min)
+2026-11-12 13:56:35  epoch 5/30 update 2565/15390 sup 2.2502 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (8.9 min)
+2026-11-12 13:58:23  epoch 6/30 update 3078/15390 sup 2.0468 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (10.7 min)
+2026-11-12 14:00:12  epoch 7/30 update 3591/15390 sup 1.8820 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (12.6 min)
+2026-11-12 14:02:00  epoch 8/30 update 4104/15390 sup 1.7974 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (14.4 min)
+2026-11-12 14:03:48  epoch 9/30 update 4617/15390 sup 1.7375 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (16.2 min)
+2026-11-12 14:05:36  epoch 10/30 update 5130/15390 sup 1.6655 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (18.0 min)
+2026-11-12 14:07:23  epoch 11/30 update 5643/15390 sup 1.5920 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (19.7 min)
+2026-11-12 14:09:12  epoch 12/30 update 6156/15390 sup 1.5248 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (21.6 min)
+2026-11-12 14:11:00  epoch 13/30 update 6669/15390 sup 1.4655 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (23.4 min)
+2026-11-12 14:12:48  epoch 14/30 update 7182/15390 sup 1.3984 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (25.2 min)
+2026-11-12 14:14:36  epoch 15/30 update 7695/15390 sup 1.3080 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (27.0 min)
+2026-11-12 14:16:24  epoch 16/30 update 8208/15390 sup 1.2418 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (28.8 min)
+2026-11-12 14:18:12  epoch 17/30 update 8721/15390 sup 1.1547 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (30.6 min)
+2026-11-12 14:20:00  burn-in done at update 9234: teacher = student, semi-supervised training starts
+2026-11-12 14:20:00  epoch 18/30 update 9234/15390 sup 1.1145 unsup 0.0000 pseudo/img 0.00 pseudo precision 0.000 recall 0.000 (32.4 min)
+2026-11-12 14:23:58  epoch 19/30 update 9747/15390 sup 1.1479 unsup 0.7048 pseudo/img 6.03 pseudo precision 0.435 recall 0.433 (36.3 min)
+2026-11-12 14:27:56  epoch 20/30 update 10260/15390 sup 1.0547 unsup 0.5305 pseudo/img 6.15 pseudo precision 0.454 recall 0.459 (40.3 min)
+2026-11-12 14:28:18  eval epoch 20: teacher test mAP50 0.3810
+2026-11-12 14:32:17  epoch 21/30 update 10773/15390 sup 1.0102 unsup 0.4559 pseudo/img 6.06 pseudo precision 0.476 recall 0.475 (44.6 min)
+2026-11-12 14:36:14  epoch 22/30 update 11286/15390 sup 0.9622 unsup 0.4217 pseudo/img 5.99 pseudo precision 0.497 recall 0.490 (48.6 min)
+2026-11-12 14:40:11  epoch 23/30 update 11799/15390 sup 0.9315 unsup 0.4021 pseudo/img 6.01 pseudo precision 0.523 recall 0.517 (52.5 min)
+2026-11-12 14:44:09  epoch 24/30 update 12312/15390 sup 0.8915 unsup 0.3886 pseudo/img 6.03 pseudo precision 0.531 recall 0.528 (56.5 min)
+2026-11-12 14:48:07  epoch 25/30 update 12825/15390 sup 0.8774 unsup 0.3664 pseudo/img 6.07 pseudo precision 0.545 recall 0.544 (60.5 min)
+2026-11-12 14:48:29  eval epoch 25: teacher test mAP50 0.4832
+2026-11-12 14:52:26  epoch 26/30 update 13338/15390 sup 0.8345 unsup 0.3637 pseudo/img 6.11 pseudo precision 0.560 recall 0.563 (64.8 min)
+2026-11-12 14:56:24  epoch 27/30 update 13851/15390 sup 0.8259 unsup 0.3720 pseudo/img 6.13 pseudo precision 0.571 recall 0.574 (68.8 min)
+2026-11-12 15:00:25  epoch 28/30 update 14364/15390 sup 0.7927 unsup 0.3703 pseudo/img 6.15 pseudo precision 0.582 recall 0.590 (72.8 min)
+2026-11-12 15:04:23  epoch 29/30 update 14877/15390 sup 0.7660 unsup 0.3596 pseudo/img 6.17 pseudo precision 0.587 recall 0.597 (76.7 min)
+2026-11-12 15:08:21  epoch 30/30 update 15390/15390 sup 0.7318 unsup 0.3448 pseudo/img 6.19 pseudo precision 0.601 recall 0.611 (80.7 min)
+2026-11-12 15:09:04  final test mAP50 teacher 0.5705 student 0.5617
+2026-11-12 15:09:04  DONE det2_p10_scratch_bi60

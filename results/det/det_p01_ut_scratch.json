@@ -1,0 +1,32 @@
+{
+ "tag": "det_p01_ut_scratch",
+ "ratio": "p01",
+ "init": "scratch",
+ "epochs": 30,
+ "updates": 15390,
+ "burnin_updates": 4617,
+ "tau": 0.5,
+ "lam": 1.0,
+ "ema": 0.9996,
+ "teacher_map50": 0.09331051950558096,
+ "student_map50": 0.0960752890191181,
+ "curve": [
+  {
+   "epoch": 10,
+   "teacher_map50": 0.03203111948933647
+  },
+  {
+   "epoch": 15,
+   "teacher_map50": 0.039237739925710474
+  },
+  {
+   "epoch": 20,
+   "teacher_map50": 0.06039665431263292
+  },
+  {
+   "epoch": 25,
+   "teacher_map50": 0.07815530224972887
+  }
+ ],
+ "minutes": 95.7
+}

@@ -1,0 +1,98 @@
+{
+ "tag": "det2_p10_scratch_bi60",
+ "ratio": "p10",
+ "init": "scratch",
+ "epochs": 30,
+ "updates": 15390,
+ "burnin_updates": 9234,
+ "tau": 0.3,
+ "tau_lo": 0.1,
+ "lam": 1.0,
+ "ema": 0.999,
+ "version": 2,
+ "teacher_map50": 0.570514231731411,
+ "student_map50": 0.5616748779121333,
+ "curve": [
+  {
+   "epoch": 19,
+   "pseudo_per_img": 6.028048780487805,
+   "pseudo_precision": 0.4353807558468884,
+   "pseudo_recall": 0.43291088312210824
+  },
+  {
+   "epoch": 20,
+   "pseudo_per_img": 6.1502439024390245,
+   "pseudo_precision": 0.453561230964467,
+   "pseudo_recall": 0.4585254379986369
+  },
+  {
+   "epoch": 20,
+   "teacher_map50": 0.38097483367474305
+  },
+  {
+   "epoch": 21,
+   "pseudo_per_img": 6.061951219512195,
+   "pseudo_precision": 0.47618089643518147,
+   "pseudo_recall": 0.47486257673634796
+  },
+  {
+   "epoch": 22,
+   "pseudo_per_img": 5.986341463414634,
+   "pseudo_precision": 0.4973516949152542,
+   "pseudo_recall": 0.4903591226801639
+  },
+  {
+   "epoch": 23,
+   "pseudo_per_img": 6.012439024390244,
+   "pseudo_precision": 0.5230619447486917,
+   "pseudo_recall": 0.5171459511490796
+  },
+  {
+   "epoch": 24,
+   "pseudo_per_img": 6.03170731707317,
+   "pseudo_precision": 0.5312980186008897,
+   "pseudo_recall": 0.5275223832657486
+  },
+  {
+   "epoch": 25,
+   "pseudo_per_img": 6.066585365853658,
+   "pseudo_precision": 0.5445261930607486,
+   "pseudo_recall": 0.5438702164397864
+  },
+  {
+   "epoch": 25,
+   "teacher_map50": 0.4831638448602169
+  },
+  {
+   "epoch": 26,
+   "pseudo_per_img": 6.105365853658537,
+   "pseudo_precision": 0.5597235538510706,
+   "pseudo_recall": 0.5627585652889906
+  },
+  {
+   "epoch": 27,
+   "pseudo_per_img": 6.13,
+   "pseudo_precision": 0.5711216329129033,
+   "pseudo_recall": 0.5740222346636807
+  },
+  {
+   "epoch": 28,
+   "pseudo_per_img": 6.151219512195122,
+   "pseudo_precision": 0.582355273592387,
+   "pseudo_recall": 0.5896735857389489
+  },
+  {
+   "epoch": 29,
+   "pseudo_per_img": 6.1692682926829265,
+   "pseudo_precision": 0.5869376136633193,
+   "pseudo_recall": 0.5966082623372448
+  },
+  {
+   "epoch": 30,
+   "pseudo_per_img": 6.19,
+   "pseudo_precision": 0.6014421372000472,
+   "pseudo_recall": 0.6111467008327995
+  }
+ ],
+ "minutes": 81.4
+}

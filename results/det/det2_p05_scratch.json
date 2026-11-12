@@ -1,0 +1,160 @@
+{
+ "tag": "det2_p05_scratch",
+ "ratio": "p05",
+ "init": "scratch",
+ "epochs": 30,
+ "updates": 15390,
+ "burnin_updates": 4617,
+ "tau": 0.3,
+ "tau_lo": 0.1,
+ "lam": 1.0,
+ "ema": 0.999,
+ "version": 2,
+ "teacher_map50": 0.414264150079231,
+ "student_map50": 0.40085532748549874,
+ "curve": [
+  {
+   "epoch": 10,
+   "pseudo_per_img": 1.8470731707317074,
+   "pseudo_precision": 0.2334918119387216,
+   "pseudo_recall": 0.07099831338848285
+  },
+  {
+   "epoch": 10,
+   "teacher_map50": 0.04858613099351614
+  },
+  {
+   "epoch": 11,
+   "pseudo_per_img": 2.8434146341463413,
+   "pseudo_precision": 0.17234572139730495,
+   "pseudo_recall": 0.0804164997997597
+  },
+  {
+   "epoch": 12,
+   "pseudo_per_img": 3.4963414634146344,
+   "pseudo_precision": 0.1654224516849229,
+   "pseudo_recall": 0.09518265756724208
+  },
+  {
+   "epoch": 13,
+   "pseudo_per_img": 3.3041463414634147,
+   "pseudo_precision": 0.17083794758213364,
+   "pseudo_recall": 0.0929391919029641
+  },
+  {
+   "epoch": 14,
+   "pseudo_per_img": 3.0209756097560976,
+   "pseudo_precision": 0.19484819121447028,
+   "pseudo_recall": 0.09751859036534109
+  },
+  {
+   "epoch": 15,
+   "pseudo_per_img": 2.917317073170732,
+   "pseudo_precision": 0.22010369627027931,
+   "pseudo_recall": 0.1051664202661126
+  },
+  {
+   "epoch": 15,
+   "teacher_map50": 0.08405711166853436
+  },
+  {
+   "epoch": 16,
+   "pseudo_per_img": 2.959268292682927,
+   "pseudo_precision": 0.2473003050037095,
+   "pseudo_recall": 0.12054970666238045
+  },
+  {
+   "epoch": 17,
+   "pseudo_per_img": 3.0841463414634145,
+   "pseudo_precision": 0.274028953405585,
+   "pseudo_recall": 0.13896578007782726
+  },
+  {
+   "epoch": 18,
+   "pseudo_per_img": 3.4726829268292683,
+   "pseudo_precision": 0.29332022195687296,
+   "pseudo_recall": 0.1676168299341577
+  },
+  {
+   "epoch": 19,
+   "pseudo_per_img": 3.906341463414634,
+   "pseudo_precision": 0.3042527946043839,
+   "pseudo_recall": 0.19534883720930232
+  },
+  {
+   "epoch": 20,
+   "pseudo_per_img": 4.31390243902439,
+   "pseudo_precision": 0.3220406085628641,
+   "pseudo_recall": 0.22785114045618246
+  },
+  {
+   "epoch": 20,
+   "teacher_map50": 0.17275783719788806
+  },
+  {
+   "epoch": 21,
+   "pseudo_per_img": 4.671707317073171,
+   "pseudo_precision": 0.3354400626795508,
+   "pseudo_recall": 0.25825391080548515
+  },
+  {
+   "epoch": 22,
+   "pseudo_per_img": 5.069756097560975,
+   "pseudo_precision": 0.351282421442664,
+   "pseudo_recall": 0.29289038677579843
+  },
+  {
+   "epoch": 23,
+   "pseudo_per_img": 5.386097560975609,
+   "pseudo_precision": 0.37294432111629594,
+   "pseudo_recall": 0.3304962261120925
+  },
+  {
+   "epoch": 24,
+   "pseudo_per_img": 5.676829268292683,
+   "pseudo_precision": 0.38551783412118606,
+   "pseudo_recall": 0.3615152125730405
+  },
+  {
+   "epoch": 25,
+   "pseudo_per_img": 5.874390243902439,
+   "pseudo_precision": 0.4035794369238435,
+   "pseudo_recall": 0.39066645228716135
+  },
+  {
+   "epoch": 25,
+   "teacher_map50": 0.306829692034003
+  },
+  {
+   "epoch": 26,
+   "pseudo_per_img": 5.980975609756098,
+   "pseudo_precision": 0.41704054164287463,
+   "pseudo_recall": 0.4109231202025479
+  },
+  {
+   "epoch": 27,
+   "pseudo_per_img": 6.133414634146342,
+   "pseudo_precision": 0.4344193817878028,
+   "pseudo_recall": 0.4383028259473346
+  },
+  {
+   "epoch": 28,
+   "pseudo_per_img": 6.1607317073170735,
+   "pseudo_precision": 0.44539080141029197,
+   "pseudo_recall": 0.45272610131271646
+  },
+  {
+   "epoch": 29,
+   "pseudo_per_img": 6.243414634146341,
+   "pseudo_precision": 0.463366027118909,
+   "pseudo_recall": 0.4754229813166546
+  },
+  {
+   "epoch": 30,
+   "pseudo_per_img": 6.2526829268292685,
+   "pseudo_precision": 0.4787765293383271,
+   "pseudo_recall": 0.49146976371645973
+  }
+ ],
+ "minutes": 98.0
+}

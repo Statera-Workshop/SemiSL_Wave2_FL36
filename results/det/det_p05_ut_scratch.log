@@ -1,0 +1,38 @@
+2026-11-10 23:09:00  start det_p05_ut_scratch: ratio p05 (root /home/minsoogo/SSL_Wave2/roots/p05/datasets/FashionLetters36), labeled samples 4100 (205 images), unlabeled images 3891, test 1024, init scratch, epochs 30, updates 15390 (burn-in 4617), tau 0.5, lam 1.0, ema 0.9996, device cuda
+2026-11-10 23:10:45  epoch 1/30 update 513/15390 sup 17.4413 unsup 0.0000 pseudo/img 0.00 (1.8 min)
+2026-11-10 23:12:31  epoch 2/30 update 1026/15390 sup 2.8357 unsup 0.0000 pseudo/img 0.00 (3.5 min)
+2026-11-10 23:14:16  epoch 3/30 update 1539/15390 sup 2.4440 unsup 0.0000 pseudo/img 0.00 (5.3 min)
+2026-11-10 23:16:02  epoch 4/30 update 2052/15390 sup 2.2919 unsup 0.0000 pseudo/img 0.00 (7.0 min)
+2026-11-10 23:17:47  epoch 5/30 update 2565/15390 sup 2.2278 unsup 0.0000 pseudo/img 0.00 (8.8 min)
+2026-11-10 23:19:32  epoch 6/30 update 3078/15390 sup 2.1048 unsup 0.0000 pseudo/img 0.00 (10.5 min)
+2026-11-10 23:21:18  epoch 7/30 update 3591/15390 sup 1.8979 unsup 0.0000 pseudo/img 0.00 (12.3 min)
+2026-11-10 23:23:04  epoch 8/30 update 4104/15390 sup 1.8113 unsup 0.0000 pseudo/img 0.00 (14.1 min)
+2026-11-10 23:24:49  burn-in done at update 4617: teacher = student, semi-supervised training starts
+2026-11-10 23:24:49  epoch 9/30 update 4617/15390 sup 1.7542 unsup 0.0000 pseudo/img 0.00 (15.8 min)
+2026-11-10 23:28:28  epoch 10/30 update 5130/15390 sup 2.0936 unsup 0.3620 pseudo/img 0.04 (19.5 min)
+2026-11-10 23:28:49  eval epoch 10: teacher test mAP50 0.0339
+2026-11-10 23:32:28  epoch 11/30 update 5643/15390 sup 1.8230 unsup 0.2023 pseudo/img 0.07 (23.5 min)
+2026-11-10 23:36:08  epoch 12/30 update 6156/15390 sup 1.7992 unsup 0.2172 pseudo/img 0.08 (27.1 min)
+2026-11-10 23:39:47  epoch 13/30 update 6669/15390 sup 1.7428 unsup 0.2020 pseudo/img 0.09 (30.8 min)
+2026-11-10 23:43:27  epoch 14/30 update 7182/15390 sup 1.6919 unsup 0.1940 pseudo/img 0.08 (34.4 min)
+2026-11-10 23:47:06  epoch 15/30 update 7695/15390 sup 1.6595 unsup 0.1811 pseudo/img 0.09 (38.1 min)
+2026-11-10 23:47:27  eval epoch 15: teacher test mAP50 0.0444
+2026-11-10 23:51:07  epoch 16/30 update 8208/15390 sup 1.6843 unsup 0.2233 pseudo/img 0.09 (42.1 min)
+2026-11-10 23:54:47  epoch 17/30 update 8721/15390 sup 1.5432 unsup 0.1969 pseudo/img 0.09 (45.8 min)
+2026-11-10 23:58:27  epoch 18/30 update 9234/15390 sup 1.5368 unsup 0.2608 pseudo/img 0.11 (49.4 min)
+2026-11-11 00:02:07  epoch 19/30 update 9747/15390 sup 1.4924 unsup 0.2553 pseudo/img 0.12 (53.1 min)
+2026-11-11 00:05:47  epoch 20/30 update 10260/15390 sup 1.4281 unsup 0.2914 pseudo/img 0.15 (56.8 min)
+2026-11-11 00:06:08  eval epoch 20: teacher test mAP50 0.0777
+2026-11-11 00:09:48  epoch 21/30 update 10773/15390 sup 1.4507 unsup 0.3537 pseudo/img 0.18 (60.8 min)
+2026-11-11 00:13:28  epoch 22/30 update 11286/15390 sup 1.4143 unsup 0.3567 pseudo/img 0.20 (64.5 min)
+2026-11-11 00:17:08  epoch 23/30 update 11799/15390 sup 1.3389 unsup 0.3620 pseudo/img 0.25 (68.1 min)
+2026-11-11 00:20:49  epoch 24/30 update 12312/15390 sup 1.2843 unsup 0.3147 pseudo/img 0.27 (71.8 min)
+2026-11-11 00:24:30  epoch 25/30 update 12825/15390 sup 1.2637 unsup 0.3240 pseudo/img 0.29 (75.5 min)
+2026-11-11 00:24:50  eval epoch 25: teacher test mAP50 0.1538
+2026-11-11 00:28:32  epoch 26/30 update 13338/15390 sup 1.2436 unsup 0.3436 pseudo/img 0.30 (79.5 min)
+2026-11-11 00:32:12  epoch 27/30 update 13851/15390 sup 1.2324 unsup 0.3639 pseudo/img 0.33 (83.2 min)
+2026-11-11 00:35:53  epoch 28/30 update 14364/15390 sup 1.2059 unsup 0.4013 pseudo/img 0.37 (86.9 min)
+2026-11-11 00:39:34  epoch 29/30 update 14877/15390 sup 1.1805 unsup 0.4267 pseudo/img 0.41 (90.6 min)
+2026-11-11 00:43:15  epoch 30/30 update 15390/15390 sup 1.1573 unsup 0.4263 pseudo/img 0.46 (94.3 min)
+2026-11-11 00:43:57  final test mAP50 teacher 0.2458 student 0.2602
+2026-11-11 00:43:57  DONE det_p05_ut_scratch

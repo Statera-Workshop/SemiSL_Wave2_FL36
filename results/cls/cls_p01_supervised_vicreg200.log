@@ -1,0 +1,13 @@
+2026-11-10 08:59:26  start cls_p01_supervised_vicreg200: method supervised, ratio p01 (41 labeled images, 258 labeled crops, 26716 unlabeled crops), init /home/minsoogo/SSL_Wave1b/runs/ssl_vicreg/backbone_e200.pth, steps 10000, batch 64 + 0 unlabeled, device cuda
+2026-11-10 08:59:49  step 1000/10000 loss 0.0023  lr 0.0297 EMA test top1 0.7497 macro F1 0.7441 (0.4 min)
+2026-11-10 09:00:09  step 2000/10000 loss 0.0008  lr 0.0289 EMA test top1 0.7613 macro F1 0.7552 (0.7 min)
+2026-11-10 09:00:30  step 3000/10000 loss 0.0011  lr 0.0275 EMA test top1 0.7641 macro F1 0.7581 (1.1 min)
+2026-11-10 09:00:51  step 4000/10000 loss 0.0009  lr 0.0256 EMA test top1 0.7671 macro F1 0.7610 (1.4 min)
+2026-11-10 09:01:12  step 5000/10000 loss 0.0007  lr 0.0232 EMA test top1 0.7710 macro F1 0.7652 (1.8 min)
+2026-11-10 09:01:33  step 6000/10000 loss 0.0005  lr 0.0204 EMA test top1 0.7725 macro F1 0.7668 (2.1 min)
+2026-11-10 09:01:54  step 7000/10000 loss 0.0008  lr 0.0172 EMA test top1 0.7768 macro F1 0.7716 (2.5 min)
+2026-11-10 09:02:15  step 8000/10000 loss 0.0005  lr 0.0136 EMA test top1 0.7794 macro F1 0.7743 (2.8 min)
+2026-11-10 09:02:36  step 9000/10000 loss 0.0007  lr 0.0098 EMA test top1 0.7773 macro F1 0.7718 (3.2 min)
+2026-11-10 09:02:57  step 10000/10000 loss 0.0005  lr 0.0059 EMA test top1 0.7801 macro F1 0.7744 (3.5 min)
+2026-11-10 09:02:57  final EMA test top1 0.7801 macro F1 0.7744
+2026-11-10 09:02:57  DONE cls_p01_supervised_vicreg200

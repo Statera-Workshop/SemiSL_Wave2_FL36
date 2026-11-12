@@ -1,0 +1,13 @@
+2026-11-10 10:39:10  start cls_p05_pseudolabel_scratch: method pseudolabel, ratio p05 (205 labeled images, 1340 labeled crops, 26716 unlabeled crops), init scratch, steps 10000, batch 64 + 64 unlabeled, device cuda
+2026-11-10 10:39:52  step 1000/10000 loss 0.0196 mask 0.656 lr 0.0297 EMA test top1 0.0721 macro F1 0.0129 (0.7 min)
+2026-11-10 10:40:31  step 2000/10000 loss 0.2000 mask 0.812 lr 0.0289 EMA test top1 0.8246 macro F1 0.8184 (1.3 min)
+2026-11-10 10:41:10  step 3000/10000 loss 0.2102 mask 0.734 lr 0.0275 EMA test top1 0.7650 macro F1 0.7693 (2.0 min)
+2026-11-10 10:41:49  step 4000/10000 loss 0.0135 mask 0.844 lr 0.0256 EMA test top1 0.7500 macro F1 0.7490 (2.7 min)
+2026-11-10 10:42:29  step 5000/10000 loss 0.0050 mask 0.812 lr 0.0232 EMA test top1 0.7286 macro F1 0.7143 (3.3 min)
+2026-11-10 10:43:08  step 6000/10000 loss 0.0011 mask 0.797 lr 0.0204 EMA test top1 0.7621 macro F1 0.7508 (4.0 min)
+2026-11-10 10:43:48  step 7000/10000 loss 0.0021 mask 0.953 lr 0.0172 EMA test top1 0.8247 macro F1 0.8164 (4.6 min)
+2026-11-10 10:44:27  step 8000/10000 loss 0.0025 mask 0.906 lr 0.0136 EMA test top1 0.7879 macro F1 0.7864 (5.3 min)
+2026-11-10 10:45:07  step 9000/10000 loss 0.0016 mask 0.922 lr 0.0098 EMA test top1 0.8586 macro F1 0.8535 (5.9 min)
+2026-11-10 10:45:46  step 10000/10000 loss 0.0022 mask 0.906 lr 0.0059 EMA test top1 0.8665 macro F1 0.8624 (6.6 min)
+2026-11-10 10:45:47  final EMA test top1 0.8665 macro F1 0.8624
+2026-11-10 10:45:47  DONE cls_p05_pseudolabel_scratch

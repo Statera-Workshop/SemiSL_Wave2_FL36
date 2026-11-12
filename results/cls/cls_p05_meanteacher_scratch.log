@@ -1,0 +1,13 @@
+2026-11-10 10:45:51  start cls_p05_meanteacher_scratch: method meanteacher, ratio p05 (205 labeled images, 1340 labeled crops, 26716 unlabeled crops), init scratch, steps 10000, batch 64 + 64 unlabeled, device cuda
+2026-11-10 10:46:38  step 1000/10000 loss 0.0632  lr 0.0297 EMA test top1 0.0310 macro F1 0.0092 (0.8 min)
+2026-11-10 10:47:22  step 2000/10000 loss 0.0550  lr 0.0289 EMA test top1 0.7567 macro F1 0.7474 (1.5 min)
+2026-11-10 10:48:07  step 3000/10000 loss 0.1251  lr 0.0275 EMA test top1 0.7771 macro F1 0.7694 (2.3 min)
+2026-11-10 10:48:52  step 4000/10000 loss 0.1514  lr 0.0256 EMA test top1 0.8395 macro F1 0.8345 (3.0 min)
+2026-11-10 10:49:36  step 5000/10000 loss 0.0529  lr 0.0232 EMA test top1 0.8362 macro F1 0.8290 (3.8 min)
+2026-11-10 10:50:21  step 6000/10000 loss 0.0239  lr 0.0204 EMA test top1 0.8471 macro F1 0.8411 (4.5 min)
+2026-11-10 10:51:06  step 7000/10000 loss 0.0943  lr 0.0172 EMA test top1 0.8667 macro F1 0.8602 (5.3 min)
+2026-11-10 10:51:50  step 8000/10000 loss 0.0254  lr 0.0136 EMA test top1 0.8589 macro F1 0.8521 (6.0 min)
+2026-11-10 10:52:35  step 9000/10000 loss 0.0304  lr 0.0098 EMA test top1 0.8704 macro F1 0.8635 (6.7 min)
+2026-11-10 10:53:20  step 10000/10000 loss 0.0157  lr 0.0059 EMA test top1 0.8765 macro F1 0.8708 (7.5 min)
+2026-11-10 10:53:20  final EMA test top1 0.8765 macro F1 0.8708
+2026-11-10 10:53:20  DONE cls_p05_meanteacher_scratch

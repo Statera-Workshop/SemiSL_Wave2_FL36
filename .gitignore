@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.npy
+*.npz
+*.zip
+*.tar.gz
+*.tmp
+*.bak
+*.orig
+*~
+runs/
