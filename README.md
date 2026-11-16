@@ -47,21 +47,32 @@ labeled-only baseline (10 % scratch 0.564 -> 0.21). **Version 2**: threshold 0.3
 heat is < 0.1 (cells in between ignored), images without pseudo boxes skipped, EMA 0.999; pseudo-label precision /
 recall vs the unlabeled ground truth logged (never trained on).
 
-Teacher mAP50, labeled-only -> version 2 (last-epoch pseudo-label precision):
+Teacher mAP50 at two budgets. Labeled-only = the same CenterNet without the unlabeled term (SSL_Wave1_FL36).
+30 epochs: burn-in 30 %; 90 epochs: burn-in 60 %.
 
-| Labels | from scratch | Barlow 200 (SSL) |
-| --- | --- | --- |
-| 1 % | 0.139 -> 0.145 (0.21) | 0.319 -> 0.319 (0.34) |
-| 5 % | 0.463 -> 0.414 (0.48) | 0.676 -> 0.687 (0.63) |
-| 10 % | 0.564 -> 0.378 (0.46) | 0.771 -> 0.778 (0.73) |
+| Labels | Init | labeled-only 30 ep | + SemiSL 30 ep | labeled-only 90 ep | + SemiSL 90 ep |
+| --- | --- | --- | --- | --- | --- |
+| 1 % | from scratch | 0.139 | 0.145 | 0.131 | - |
+| 1 % | Barlow 200 | 0.319 | 0.319 | 0.330 | 0.348 |
+| 5 % | from scratch | 0.463 | 0.414 | 0.605 | **0.725** |
+| 5 % | Barlow 200 | 0.676 | 0.687 | 0.711 | **0.773** |
+| 10 % | from scratch | 0.564 | 0.378 (burn-in 60 %: 0.571) | 0.725 / 0.720 | **0.793 / 0.801** |
+| 10 % | Barlow 200 | 0.771 | 0.778 | 0.770 / 0.774 / 0.775 | **0.821** |
 
-Burn-in 60 % instead of 30 % (10 %, scratch; stronger teacher before pseudo-labelling): teacher 0.5705,
-student 0.5617; the labeled-only baseline is 0.564, so a stronger teacher removes the loss but adds no gain.
+Last-epoch pseudo-label precision at 30 epochs: from scratch 0.21-0.48, Barlow 200 0.34-0.73 (all runs and
+pseudo-label statistics: `results/det_summary.md`).
 
-**Conclusions.** Pseudo-label precision decides the outcome: with a weak teacher (from scratch, precision ~0.46)
-semi-supervised training hurts; on a good SSL backbone it no longer hurts but adds nothing beyond run-to-run
-variation within the 30-epoch budget. In this setting a good SSL backbone (SSL_Wave1_FL36) gives far more than the
-unlabeled-data term: Barlow 200 with 10 % labels alone (0.771) beats from-scratch with 100 % labels (0.611).
+**Conclusions.**
+
+1. **The budget decides.** At 30 epochs the unlabeled term adds nothing on a good backbone and hurts with a weak
+   teacher (10 % scratch 0.564 -> 0.378; a later burn-in only removes the loss). At 90 epochs with burn-in 60 % it
+   adds **+0.06 to +0.12** (10 % scratch +0.075, reproduced with a second seed: 0.793 / 0.801 vs 0.725 / 0.720).
+2. **SSL and semi-supervised learning add up.** Barlow 200 + SemiSL with 10 % labels reaches 0.821, against
+   0.722 for from-scratch with the same labels and 0.860 for from-scratch with 100 % labels (90 epochs).
+3. **Pseudo-label precision is the limit.** With 1 % labels (41 images) the teacher stays weak and the gain is
+   small (+0.018 on Barlow 200).
+4. The first conclusion of this repository (no gain from semi-supervised detection) was an artefact of the short
+   budget, like the convergence effect of SSL in SSL_Wave1_FL36.
 
 ## Reproduce
 

@@ -129,3 +129,41 @@ lab_p10_barlow200_e90   | 160 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet &
 lab_p25_barlow200       | 55  | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p25 python train_image_centernet_lab.py --tag lab_p25_barlow200 --pretrained ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth
 lab_p100_vicreg200_e90  | 160 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag lab_p100_vicreg200_e90 --epochs 90 --pretrained ~/SSL_Wave1b/runs/ssl_vicreg/backbone_e200.pth
 det2_p10_scratch_bi60 | 105 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p10 --init scratch --burnin 0.6 --tag det2_p10_scratch_bi60
+# ===== Weekend 11-12 ~ 11-16 (cutoff Mon 05:20) =====
+# --- 1. 90-epoch label efficiency (scratch / Barlow 200) ---
+lab_p01_scratch_e90    | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p01 python train_image_centernet_lab.py --tag lab_p01_scratch_e90 --epochs 90
+lab_p01_barlow200_e90  | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p01 python train_image_centernet_lab.py --tag lab_p01_barlow200_e90 --epochs 90 --pretrained ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth
+lab_p05_scratch_e90    | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p05 python train_image_centernet_lab.py --tag lab_p05_scratch_e90 --epochs 90
+lab_p05_barlow200_e90  | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p05 python train_image_centernet_lab.py --tag lab_p05_barlow200_e90 --epochs 90 --pretrained ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth
+lab_p25_scratch_e90    | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p25 python train_image_centernet_lab.py --tag lab_p25_scratch_e90 --epochs 90
+lab_p25_barlow200_e90  | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p25 python train_image_centernet_lab.py --tag lab_p25_barlow200_e90 --epochs 90 --pretrained ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth
+# --- 2. 90-epoch variance at 10 % ---
+lab_p10_barlow200_s778_e90 | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_barlow200_s778_e90 --epochs 90 --pretrained ~/SSL_Wave1bs/s778/runs/ssl_barlow/backbone_e200.pth
+lab_p10_barlow200_s779_e90 | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_barlow200_s779_e90 --epochs 90 --pretrained ~/SSL_Wave1bs/s779/runs/ssl_barlow/backbone_e200.pth
+lab_p10_scratch_ft778_e90 | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_scratch_ft778_e90 --epochs 90 --seed 778
+# --- 3. long-budget semi-supervised detection (90 epochs, burn-in 60 %) ---
+det2_p10_scratch_e90  | 230 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p10 --init scratch --epochs 90 --burnin 0.6 --tag det2_p10_scratch_e90
+det2_p10_barlow200_e90 | 230 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p10 --init ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth --epochs 90 --burnin 0.6 --tag det2_p10_barlow200_e90
+# --- 4. Barlow 800 epochs ---
+barlow800          | 280 | mkdir -p ~/SSL_Wave1c/datasets && ln -sfn ~/SSL_Wave1/datasets/ssl ~/SSL_Wave1c/datasets/ssl && cd ~/SSL_Wave1/code/ssl && PHYSICAL_AI_ROOT=$HOME/SSL_Wave1c python ssl_train_ext.py --method barlow --epochs 800 --workers 8 --gate-margin -1 --knn-every 100
+cn_barlow800       | 55  | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag ssl_barlow_e800 --pretrained ~/SSL_Wave1c/runs/ssl_barlow/backbone_e800.pth
+lab_p10_barlow800  | 55  | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_barlow800 --pretrained ~/SSL_Wave1c/runs/ssl_barlow/backbone_e800.pth
+# --- 5. VICReg 200 at 90 epochs ---
+lab_p100_vicreg200_e90 | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag lab_p100_vicreg200_e90 --epochs 90 --pretrained ~/SSL_Wave1b/runs/ssl_vicreg/backbone_e200.pth
+lab_p10_vicreg200_e90  | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_vicreg200_e90 --epochs 90 --pretrained ~/SSL_Wave1b/runs/ssl_vicreg/backbone_e200.pth
+# --- 6. if time remains ---
+vicreg800          | 280 | cd ~/SSL_Wave1/code/ssl && PHYSICAL_AI_ROOT=$HOME/SSL_Wave1c python ssl_train_ext.py --method vicreg --epochs 800 --workers 8 --gate-margin -1 --knn-every 100
+cn_vicreg800       | 55  | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag ssl_vicreg_e800 --pretrained ~/SSL_Wave1c/runs/ssl_vicreg/backbone_e800.pth
+final_eval_1c      | 10  | cd ~/SSL_Wave1/code/ssl && PHYSICAL_AI_ROOT=$HOME/SSL_Wave1c python final_eval.py
+det2_p05_scratch_e90  | 230 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p05 --init scratch --epochs 90 --burnin 0.6 --tag det2_p05_scratch_e90
+det2_p05_barlow200_e90 | 230 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p05 --init ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth --epochs 90 --burnin 0.6 --tag det2_p05_barlow200_e90
+lab_p100_barlow800_e90 | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag lab_p100_barlow800_e90 --epochs 90 --pretrained ~/SSL_Wave1c/runs/ssl_barlow/backbone_e800.pth
+lab_p10_barlow800_e90  | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_barlow800_e90 --epochs 90 --pretrained ~/SSL_Wave1c/runs/ssl_barlow/backbone_e800.pth
+# ===== Sunday 11-15 extension: 90-epoch variance (seed 778) =====
+lab_p100_scratch_ft778_e90   | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag lab_p100_scratch_ft778_e90 --epochs 90 --seed 778
+det2_p10_scratch_e90_s778 | 230 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p10 --init scratch --epochs 90 --burnin 0.6 --seed 778 --tag det2_p10_scratch_e90_s778
+lab_p100_barlow200_s778_e90  | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python train_image_centernet_lab.py --tag lab_p100_barlow200_s778_e90 --epochs 90 --pretrained ~/SSL_Wave1bs/s778/runs/ssl_barlow/backbone_e200.pth
+det2_p01_barlow200_e90 | 230 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && python semisl_det_v2.py --ratio p01 --init ~/SSL_Wave1b/runs/ssl_barlow/backbone_e200.pth --epochs 90 --burnin 0.6 --tag det2_p01_barlow200_e90
+lab_p05_scratch_ft778_e90    | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p05 python train_image_centernet_lab.py --tag lab_p05_scratch_ft778_e90 --epochs 90 --seed 778
+lab_p05_barlow200_s778_e90   | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p05 python train_image_centernet_lab.py --tag lab_p05_barlow200_s778_e90 --epochs 90 --pretrained ~/SSL_Wave1bs/s778/runs/ssl_barlow/backbone_e200.pth
+lab_p10_vicreg800_e90        | 175 | cd ~/SSL_Wave1/code/OD_Image_1-Stage_CenterNet && PHYSICAL_AI_ROOT=$HOME/SSL_Wave2/roots/p10 python train_image_centernet_lab.py --tag lab_p10_vicreg800_e90 --epochs 90 --pretrained ~/SSL_Wave1c/runs/ssl_vicreg/backbone_e800.pth
